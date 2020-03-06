@@ -1,0 +1,23 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Xilinx/Vivado/2018.3/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'user' on host '20190704-152926' (Windows NT_amd64 version 6.2) on Mon Jan 06 15:45:36 +0800 2020
+INFO: [HLS 200-10] In directory 'D:/08_Verilog/Hw5_P76087081_TranThiAi/files'
+invalid command name "get_projects"
+    while executing
+"get_projects -quiet"
+    invoked from within
+"set list_projs [get_projects -quiet]"
+    (file "hw5.tcl" line 44)
+    invoked from within
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [Common 17-206] Exiting vivado_hls at Mon Jan  6 15:45:36 2020...

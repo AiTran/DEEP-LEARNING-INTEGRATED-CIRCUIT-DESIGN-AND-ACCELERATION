@@ -1,0 +1,228 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 15876
+License: Customer
+
+Current time: 	Mon Jan 06 15:41:56 CST 2020
+Time zone: 	Taipei Standard Time (Asia/Taipei)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 178 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	user
+User home directory: C:/Users/user
+User working directory: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/user/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/vivado.log
+Vivado journal file location: 	D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/vivado.jou
+Engine tmp dir: 	D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/.Xil/Vivado-15876-20190704-152926
+
+Xilinx Environment Variables
+----------------------------
+VIVADO_HLS_HOME: C:\Xilinx\Vivado\2018.3\bin\..
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 563 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// bx (cp):  Sourcing Tcl script 'pynq_arch.tcl' : addNotify
+// Tcl Message: source pynq_arch.tcl 
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 629ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 590 MB. GUI used memory: 45 MB. Current time: 1/6/20, 3:41:58 PM CST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 96 MB (+98304kb) [00:00:28]
+// [Engine Memory]: 706 MB (+589326kb) [00:00:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  4434 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 759.949 ; gain = 179.039 
+// Tcl Message: # set proj_dir [get_property directory [current_project]] # set obj [get_projects PYNQ_ARCH] # set_property "board_part" "digilentinc.com:arty-z7-20:part0:1.0" $obj # set_property "default_lib" "xil_defaultlib" $obj # set_property "sim.ip.auto_export_scripts" "1" $obj # set_property "simulator_language" "Mixed" $obj # set_property "xpm_libraries" "XPM_CDC XPM_MEMORY" $obj # if {[string equal [get_filesets -quiet sources_1] ""]} { #   create_fileset -srcset sources_1 # } # set obj [get_filesets sources_1] # set_property "ip_repo_paths" "[file normalize "$origin_dir/../"]" $obj # update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/08_Verilog/pro/PYNQ-Classification-master/hw'. 
+// Tcl Message: # set obj [get_filesets sources_1] # set files [list \ #  "[file normalize "$origin_dir/base/base.bd"]"\ #  "[file normalize "$origin_dir/base/base_wrapper.v"]"\ # ] # add_files -norecurse -fileset $obj $files 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_OPTIONS_MODIFIED
+// TclEventType: RUN_MODIFY
+// TclEventType: STOP_PROGRESS_DIALOG
+// Tcl Message: INFO: Project created:PYNQ_ARCH 
+// [GUI Memory]: 110 MB (+9918kb) [00:00:38]
+dismissDialog("Sourcing Tcl script 'pynq_arch.tcl'"); // bx (cp)
+// TclEventType: STOP_PROGRESS_DIALOG
+// HMemoryUtils.trashcanNow. Engine heap size: 743 MB. GUI used memory: 51 MB. Current time: 1/6/20, 3:42:23 PM CST
+// [Engine Memory]: 743 MB (+1091kb) [00:00:45]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 94 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// bx (cp):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/base/base.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0 Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1 Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding cell -- xilinx.com:ip:axis_switch:1.1 - axis_switch_0 Adding cell -- xilinx.com:ip:processing_system7:5.5 - ps7 
+// TclEventType: RSB_PROPERTY_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 768 MB. GUI used memory: 50 MB. Current time: 1/6/20, 3:43:58 PM CST
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 825 MB (+46902kb) [00:02:22]
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 884 MB (+18663kb) [00:02:25]
+// WARNING: HEventQueue.dispatchEvent() is taking  2980 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 13 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 907.371 ; gain = 108.719 
+// 'bA' command handler elapsed time: 13 seconds
+dismissDialog("Open Block Design"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 887 MB. GUI used memory: 53 MB. Current time: 1/6/20, 4:13:58 PM CST
+// Elapsed time: 2590 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// f (cp): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: [Mon Jan  6 16:27:22 2020] Launched synth_1... Run output will be captured here: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/PYNQ_ARCH/PYNQ_ARCH.runs/synth_1/runme.log [Mon Jan  6 16:27:22 2020] Launched impl_1... Run output will be captured here: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/PYNQ_ARCH/PYNQ_ARCH.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 120 MB (+4441kb) [00:59:10]
+// HMemoryUtils.trashcanNow. Engine heap size: 887 MB. GUI used memory: 61 MB. Current time: 1/6/20, 4:43:59 PM CST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 1836 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 941 MB. GUI used memory: 64 MB. Current time: 1/6/20, 4:58:04 PM CST
+// [Engine Memory]: 944 MB (+16324kb) [01:16:23]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,519 MB. GUI used memory: 64 MB. Current time: 1/6/20, 4:58:19 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,118 MB. GUI used memory: 64 MB. Current time: 1/6/20, 4:58:32 PM CST
+// [Engine Memory]: 2,118 MB (+1181557kb) [01:16:51]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 2,247 MB (+24677kb) [01:16:52]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 135 MB (+9213kb) [01:16:53]
+// WARNING: HEventQueue.dispatchEvent() is taking  1949 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 6517 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z020clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.156 ; gain = 68.086 
+// Tcl Message: Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.156 ; gain = 68.086 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2273.156 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 606 instances were transformed.   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 396 instances   RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances   RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 171 instances   RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances   SRLC32E => SRL16E: 6 instances  
+// ExpRunCommands.openImplResults elapsed time: 35.6s
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  1209 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 2407.879 ; gain = 1458.035 
+// [GUI Memory]: 142 MB (+252kb) [01:16:55]
+// [GUI Memory]: 157 MB (+8251kb) [01:16:55]
+// 'dQ' command handler elapsed time: 37 seconds
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 37 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 9.1s
+// Device view-level: 0.0
+// [Engine Memory]: 2,391 MB (+32714kb) [01:17:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,415 MB. GUI used memory: 148 MB. Current time: 1/6/20, 4:58:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,420 MB. GUI used memory: 97 MB. Current time: 1/6/20, 5:28:54 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,420 MB. GUI used memory: 95 MB. Current time: 1/6/20, 5:58:55 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,420 MB. GUI used memory: 95 MB. Current time: 1/6/20, 6:28:55 PM CST

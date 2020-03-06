@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jan  4 21:33:25 2020
+# Process ID: 26208
+# Current directory: D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15724 D:\08_Verilog\projects\PYNQ-Classification-master\PYNQ-Classification-master\hw\utils\stream_double\solution1\impl\vhdl\project.xpr
+# Log file: D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl/vivado.log
+# Journal file: D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl/project.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl'
+INFO: [Project 1-313] Project file moved from 'C:/Users/ogden/Documents/hls_workspace/stream_double/solution1/impl/vhdl' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'D:/08_Verilog/projects/PYNQ-Classification-master/PYNQ-Classification-master/hw/utils/stream_double/solution1/impl/vhdl/project.ip_user_files', nor could it be found using path 'C:/Users/ogden/Documents/hls_workspace/stream_double/solution1/impl/vhdl/project.ip_user_files'.
+INFO: [Project 1-230] Project 'project.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 760.270 ; gain = 110.164
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jan  4 21:34:10 2020...

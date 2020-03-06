@@ -1,0 +1,148 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'cifar_10'" level="0">
+<item name = "Date">Mon Jan  6 15:37:43 2020
+</item>
+<item name = "Version">2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)</item>
+<item name = "Project">CIFAR_10</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 12.592, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">?, ?, ?, ?, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="FC_1u_1024u_64u_U0">FC_1u_1024u_64u_s, ?, ?, ?, ?, none</column>
+<column name="SMM_1u_75u_32u_U0">SMM_1u_75u_32u_s, ?, ?, ?, ?, none</column>
+<column name="SMM_1u_800u_64u_U0">SMM_1u_800u_64u_s, ?, ?, ?, ?, none</column>
+<column name="SMM_1u_800u_32u_U0">SMM_1u_800u_32u_s, ?, ?, ?, ?, none</column>
+<column name="SCIG_1_U0">SCIG_1, ?, ?, ?, ?, none</column>
+<column name="SCIG_2_U0">SCIG_2, ?, ?, ?, ?, none</column>
+<column name="FC_1u_64u_10u_U0">FC_1u_64u_10u_s, ?, ?, ?, ?, none</column>
+<column name="AXI_DMA_MASTER_U0">AXI_DMA_MASTER, ?, ?, ?, ?, none</column>
+<column name="AXI_DMA_SLAVE_U0">AXI_DMA_SLAVE, ?, ?, ?, ?, none</column>
+<column name="SCIG_U0">SCIG, ?, ?, ?, ?, none</column>
+<column name="pool_2u_32u_32u_U0">pool_2u_32u_32u_s, ?, ?, ?, ?, none</column>
+<column name="pool_2u_64u_8u_U0">pool_2u_64u_8u_s, ?, ?, ?, ?, none</column>
+<column name="pool_2u_32u_16u_U0">pool_2u_32u_16u_s, ?, ?, ?, ?, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">18, -, 483, 591</column>
+<column name="Instance">228, 186, 25366, 85280</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, -</column>
+<column name="Register">-, -, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">87, 84, 24, 161</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="AXI_DMA_MASTER_U0">AXI_DMA_MASTER, 0, 0, 586, 6797</column>
+<column name="AXI_DMA_SLAVE_U0">AXI_DMA_SLAVE, 0, 0, 510, 6623</column>
+<column name="FC_1u_1024u_64u_U0">FC_1u_1024u_64u_s, 64, 41, 3948, 7249</column>
+<column name="FC_1u_64u_10u_U0">FC_1u_64u_10u_s, 16, 25, 2618, 5662</column>
+<column name="SCIG_U0">SCIG, 16, 0, 1085, 5962</column>
+<column name="SCIG_1_U0">SCIG_1, 16, 0, 929, 8702</column>
+<column name="SCIG_2_U0">SCIG_2, 16, 0, 877, 8691</column>
+<column name="SMM_1u_75u_32u_U0">SMM_1u_75u_32u_s, 25, 34, 3728, 6738</column>
+<column name="SMM_1u_800u_32u_U0">SMM_1u_800u_32u_s, 25, 34, 3332, 6531</column>
+<column name="SMM_1u_800u_64u_U0">SMM_1u_800u_64u_s, 50, 34, 3335, 6539</column>
+<column name="pool_2u_32u_16u_U0">pool_2u_32u_16u_s, 0, 6, 1435, 5045</column>
+<column name="pool_2u_32u_32u_U0">pool_2u_32u_32u_s, 0, 6, 1514, 5456</column>
+<column name="pool_2u_64u_8u_U0">pool_2u_64u_8u_s, 0, 6, 1469, 5285</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+<column name="connect_0_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_10_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_11_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_1_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_2_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="connect_3_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_4_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_5_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="connect_6_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_7_V_V_U">2, 52, 51, 50, 32, 1600</column>
+<column name="connect_8_V_V_U">0, 5, 44, 2, 32, 64</column>
+<column name="connect_9_V_V_U">2, 52, 51, 50, 32, 1600</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="in_stream_TDATA">in, 32, axis, in_stream_V_data_V, pointer</column>
+<column name="in_stream_TLAST">in, 1, axis, in_stream_V_last, pointer</column>
+<column name="in_stream_TVALID">in, 1, axis, in_stream_V_last, pointer</column>
+<column name="in_stream_TREADY">out, 1, axis, in_stream_V_last, pointer</column>
+<column name="out_stream_TDATA">out, 32, axis, out_stream_V_data_V, pointer</column>
+<column name="out_stream_TLAST">out, 1, axis, out_stream_V_last, pointer</column>
+<column name="out_stream_TVALID">out, 1, axis, out_stream_V_last, pointer</column>
+<column name="out_stream_TREADY">in, 1, axis, out_stream_V_last, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_none, cifar_10, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, cifar_10, return value</column>
+</table>
+</item>
+</section>
+</profile>

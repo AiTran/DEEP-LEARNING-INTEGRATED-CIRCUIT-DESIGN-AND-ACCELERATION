@@ -1,0 +1,301 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Jan  6 15:41:35 2020
+# Process ID: 15876
+# Current directory: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project
+# Command line: vivado.exe -source pynq_arch.tcl
+# Log file: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/vivado.log
+# Journal file: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source pynq_arch.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "pynq_arch.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# set orig_proj_dir "[file normalize "$origin_dir/../PYNQ_ARCH/PYNQ_ARCH"]"
+# create_project PYNQ_ARCH ./PYNQ_ARCH -part xc7z020clg400-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 759.949 ; gain = 179.039
+# set proj_dir [get_property directory [current_project]]
+# set obj [get_projects PYNQ_ARCH]
+# set_property "board_part" "digilentinc.com:arty-z7-20:part0:1.0" $obj
+# set_property "default_lib" "xil_defaultlib" $obj
+# set_property "sim.ip.auto_export_scripts" "1" $obj
+# set_property "simulator_language" "Mixed" $obj
+# set_property "xpm_libraries" "XPM_CDC XPM_MEMORY" $obj
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# set_property "ip_repo_paths" "[file normalize "$origin_dir/../"]" $obj
+# update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/08_Verilog/pro/PYNQ-Classification-master/hw'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/08_Verilog/pro/PYNQ-Classification-master/hw' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/PYNQ_ARCH'.)
+# set obj [get_filesets sources_1]
+# set files [list \
+#  "[file normalize "$origin_dir/base/base.bd"]"\
+#  "[file normalize "$origin_dir/base/base_wrapper.v"]"\
+# ]
+# add_files -norecurse -fileset $obj $files
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'base.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+base_cifar_10_0_0
+
+# set file "$origin_dir/base/base.bd"
+# set file [file normalize $file]
+# set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
+# if { ![get_property "is_locked" $file_obj] } {
+#   set_property "generate_synth_checkpoint" "0" $file_obj
+# }
+# set obj [get_filesets sources_1]
+# set_property "top" "base_wrapper" $obj
+# if {[string equal [get_filesets -quiet constrs_1] ""]} {
+#   create_fileset -constrset constrs_1
+# }
+# set obj [get_filesets constrs_1]
+# set file "[file normalize "$origin_dir/top.xdc"]"
+# set file_added [add_files -norecurse -fileset $obj $file]
+# set file "$origin_dir/top.xdc"
+# set file [file normalize $file]
+# set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
+# set_property "file_type" "XDC" $file_obj
+# set obj [get_filesets constrs_1]
+# if {[string equal [get_filesets -quiet sim_1] ""]} {
+#   create_fileset -simset sim_1
+# }
+# set obj [get_filesets sim_1]
+# set obj [get_filesets sim_1]
+# set_property "top" "base_wrapper" $obj
+# set_property "transport_int_delay" "0" $obj
+# set_property "transport_path_delay" "0" $obj
+# set_property "xelab.nosort" "1" $obj
+# set_property "xelab.unifast" "" $obj
+# if {[string equal [get_runs -quiet synth_1] ""]} {
+#   create_run -name synth_1 -part xc7z020clg400-1 -flow {Vivado Synthesis 2016} -strategy "Vivado Synthesis Defaults" -constrset constrs_1
+# } else {
+#   set_property strategy "Vivado Synthesis Defaults" [get_runs synth_1]
+#   set_property flow "Vivado Synthesis 2016" [get_runs synth_1]
+# }
+# set obj [get_runs synth_1]
+# current_run -synthesis [get_runs synth_1]
+# if {[string equal [get_runs -quiet impl_1] ""]} {
+#   create_run -name impl_1 -part xc7z020clg400-1 -flow {Vivado Implementation 2016} -strategy "Vivado Implementation Defaults" -constrset constrs_1 -parent_run synth_1
+# } else {
+#   set_property strategy "Vivado Implementation Defaults" [get_runs impl_1]
+#   set_property flow "Vivado Implementation 2016" [get_runs impl_1]
+# }
+# set obj [get_runs impl_1]
+# set_property "steps.write_bitstream.args.readback_file" "0" $obj
+# set_property "steps.write_bitstream.args.verbose" "0" $obj
+# current_run -implementation [get_runs impl_1]
+# puts "INFO: Project created:PYNQ_ARCH"
+INFO: Project created:PYNQ_ARCH
+update_compile_order -fileset sources_1
+open_bd_design {D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/base/base.bd}
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axis_switch:1.1 - axis_switch_0
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - ps7
+Adding cell -- xilinx.com:ip:axi_interconnect:2.1 - ps7_axi_periph
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_100M
+Adding cell -- Xilinx:hls:simple_sum:1.0 - simple_sum_0
+Adding cell -- Xilinx:hls:stream_mult:1.0 - stream_mult_0
+Adding cell -- Xilinx:hls:mult_constant:1.0 - mult_constant_0
+Adding cell -- xilinx.com:hls:cifar_10:1.0 - cifar_10_0
+Excluding </ps7/S_AXI_ACP/ACP_IOP> from </axi_dma_0/Data_MM2S>
+Excluding </ps7/S_AXI_ACP/ACP_M_AXI_GP0> from </axi_dma_0/Data_MM2S>
+Excluding </ps7/S_AXI_ACP/ACP_IOP> from </axi_dma_0/Data_S2MM>
+Excluding </ps7/S_AXI_ACP/ACP_M_AXI_GP0> from </axi_dma_0/Data_S2MM>
+Excluding </ps7/S_AXI_ACP/ACP_IOP> from </axi_dma_1/Data_MM2S>
+Excluding </ps7/S_AXI_ACP/ACP_M_AXI_GP0> from </axi_dma_1/Data_MM2S>
+Excluding </ps7/S_AXI_ACP/ACP_IOP> from </axi_dma_1/Data_S2MM>
+Excluding </ps7/S_AXI_ACP/ACP_M_AXI_GP0> from </axi_dma_1/Data_S2MM>
+Successfully read diagram <base> from BD file <D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 907.371 ; gain = 108.719
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon Jan  6 16:27:22 2020] Launched synth_1...
+Run output will be captured here: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/PYNQ_ARCH/PYNQ_ARCH.runs/synth_1/runme.log
+[Mon Jan  6 16:27:22 2020] Launched impl_1...
+Run output will be captured here: D:/08_Verilog/pro/PYNQ-Classification-master/hw/base_project/PYNQ_ARCH/PYNQ_ARCH.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 6517 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.156 ; gain = 68.086
+Restored from archive | CPU: 6.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2273.156 ; gain = 68.086
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2273.156 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 606 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 396 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 171 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 32 instances
+  SRLC32E => SRL16E: 6 instances
+
+open_run: Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 2407.879 ; gain = 1458.035
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.

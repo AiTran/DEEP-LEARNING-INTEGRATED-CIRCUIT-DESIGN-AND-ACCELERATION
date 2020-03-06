@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_631" tag="SCHEDULE" content="Option &apos;relax_ii_for_timing&apos; is enabled, will increase II to preserve clock frequency constraints."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;CIFAR_10_wrapper.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-111]" key="HLS 214-111" tag="DATAFLOW,SDX_KERNEL" content="Static variables and non-static stream cannot be used inside a dataflow region: CIFAR_10_wrapper.cpp:13:23"/>
+	<Message severity="WARNING" prefix="[HLS 200-471]" key="HLS 200-471" tag="DATAFLOW,SDX_KERNEL" content="Dataflow form checks found 1 issue(s) in file CIFAR_10_wrapper.cpp"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 103.316 ; gain = 18.625"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 103.316 ; gain = 18.625"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 115.219 ; gain = 30.527"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 118.012 ; gain = 33.320"/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;L3&apos; (./../hw_library/fixed_point_stream_convolution.h:124) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;L3&apos; (./../hw_library/fixed_point_stream_convolution.h:124) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;L3&apos; (./../hw_library/fixed_point_stream_convolution.h:124) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1&apos; (./../hw_library/stream_convolution_slideWindow.h:123) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1&apos; (./../hw_library/stream_convolution_slideWindow.h:123) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;Loop-1&apos; (./../hw_library/stream_convolution_slideWindow.h:123) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;L3&apos; (./../hw_library/fully_connected.h:124) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[XFORM 203-502]" key="XFORM_AUTO_UNROLL_STATUS_246" tag="" content="Unrolling all sub-loops inside loop &apos;L3&apos; (./../hw_library/fully_connected.h:124) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos; for pipelining."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/pool.h:124) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos; completely with a factor of 4."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-2&apos; (./../hw_library/pool.h:130) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos; completely with a factor of 64."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/pool.h:124) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos; completely with a factor of 16."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-2&apos; (./../hw_library/pool.h:130) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/pool.h:124) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos; completely with a factor of 8."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-2&apos; (./../hw_library/pool.h:130) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;L4&apos; (./../hw_library/fixed_point_stream_convolution.h:126) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos; completely with a factor of 25."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;L4&apos; (./../hw_library/fixed_point_stream_convolution.h:126) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos; completely with a factor of 25."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;L4&apos; (./../hw_library/fixed_point_stream_convolution.h:126) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos; completely with a factor of 25."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/stream_convolution_slideWindow.h:130) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.2&apos; (./../hw_library/stream_convolution_slideWindow.h:135) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.3&apos; (./../hw_library/stream_convolution_slideWindow.h:140) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.4&apos; (./../hw_library/stream_convolution_slideWindow.h:158) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; completely with a factor of 3."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/stream_convolution_slideWindow.h:130) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.2&apos; (./../hw_library/stream_convolution_slideWindow.h:135) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.3&apos; (./../hw_library/stream_convolution_slideWindow.h:140) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.4&apos; (./../hw_library/stream_convolution_slideWindow.h:158) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.1&apos; (./../hw_library/stream_convolution_slideWindow.h:130) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.2&apos; (./../hw_library/stream_convolution_slideWindow.h:135) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.3&apos; (./../hw_library/stream_convolution_slideWindow.h:140) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;Loop-1.4&apos; (./../hw_library/stream_convolution_slideWindow.h:158) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;L4&apos; (./../hw_library/fully_connected.h:126) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos; completely with a factor of 16."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;L4&apos; (./../hw_library/fully_connected.h:126) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos; completely with a factor of 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;A.V.4&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;B.V.4&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;A.V.3&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;B.V.3&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;A.V.2&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;B.V.2&apos;  in dimension 2 with a block factor 25."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;A.V.1&apos;  in dimension 2 with a block factor 16."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;B.V.1&apos;  in dimension 2 with a block factor 16."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;A.V&apos;  in dimension 2 with a block factor 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_111" tag="" content="Partitioning array &apos;B.V&apos;  in dimension 2 with a block factor 32."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;cifar_10&apos;, detected/extracted 13 process function(s): 
+	 &apos;AXI_DMA_SLAVE&apos;
+	 &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos;
+	 &apos;SMM&lt;1u, 75u, 32u&gt;&apos;
+	 &apos;pool&lt;2u, 32u, 32u&gt;&apos;
+	 &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos;
+	 &apos;SMM&lt;1u, 800u, 32u&gt;&apos;
+	 &apos;pool&lt;2u, 32u, 16u&gt;&apos;
+	 &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos;
+	 &apos;SMM&lt;1u, 800u, 64u&gt;&apos;
+	 &apos;pool&lt;2u, 64u, 8u&gt;&apos;
+	 &apos;FC&lt;1u, 1024u, 64u&gt;&apos;
+	 &apos;FC&lt;1u, 64u, 10u&gt;&apos;
+	 &apos;AXI_DMA_MASTER&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (./../hw_library/stream_convolution_slideWindow.h:141:6) to (./../hw_library/stream_convolution_slideWindow.h:152:4) in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (./../hw_library/stream_convolution_slideWindow.h:141:6) to (./../hw_library/stream_convolution_slideWindow.h:152:4) in function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-401]" key="XFORM_IFCONV_STATUS_239" tag="" content="Performing if-conversion on hyperblock from (./../hw_library/stream_convolution_slideWindow.h:141:6) to (./../hw_library/stream_convolution_slideWindow.h:152:4) in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos;... converting 3 basic blocks."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos; (./../hw_library/fixed_point_stream_convolution.h:17:32)...25 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos; (./../hw_library/fixed_point_stream_convolution.h:17:32)...25 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos; (./../hw_library/fixed_point_stream_convolution.h:17:32)...25 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; (./../hw_library/stream_convolution_slideWindow.h:68:7)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; (./../hw_library/stream_convolution_slideWindow.h:68:7)...3 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;FC&lt;1u, 64u, 10u&gt;&apos; (./../hw_library/fully_connected.h:17:32)...16 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[XFORM 203-11]" key="XFORM_EXPR_BALANCE_STATUS_178" tag="" content="Balancing expressions in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos; (./../hw_library/fully_connected.h:17:32)...32 expression(s) balanced."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 160.637 ; gain = 75.945"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1.1.1&apos; (./../hw_library/pool.h:144:31) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1.1.1&apos; (./../hw_library/pool.h:142:30) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1&apos; (./../hw_library/pool.h:141:29) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.2&apos; (./../hw_library/pool.h:167:33) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1&apos; (./../hw_library/pool.h:140:28) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (./../hw_library/pool.h:139:32) in function &apos;pool&lt;2u, 64u, 8u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1.1.1&apos; (./../hw_library/pool.h:144:31) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1.1.1&apos; (./../hw_library/pool.h:142:30) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1&apos; (./../hw_library/pool.h:141:29) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.2&apos; (./../hw_library/pool.h:167:33) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1&apos; (./../hw_library/pool.h:140:28) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (./../hw_library/pool.h:139:32) in function &apos;pool&lt;2u, 32u, 32u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1.1.1&apos; (./../hw_library/pool.h:144:31) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1.1.1&apos; (./../hw_library/pool.h:142:30) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.1&apos; (./../hw_library/pool.h:141:29) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2.1.2&apos; (./../hw_library/pool.h:167:33) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2.1&apos; (./../hw_library/pool.h:140:28) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-2&apos; (./../hw_library/pool.h:139:32) in function &apos;pool&lt;2u, 32u, 16u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (./../hw_library/fixed_point_stream_convolution.h:78:15) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;L2&apos; (./../hw_library/fixed_point_stream_convolution.h:122:7) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;L1&apos; (./../hw_library/fixed_point_stream_convolution.h:120:6) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (./../hw_library/fixed_point_stream_convolution.h:96:22) in function &apos;SMM&lt;1u, 800u, 64u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (./../hw_library/fixed_point_stream_convolution.h:78:15) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;L2&apos; (./../hw_library/fixed_point_stream_convolution.h:122:7) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;L1&apos; (./../hw_library/fixed_point_stream_convolution.h:120:6) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (./../hw_library/fixed_point_stream_convolution.h:96:22) in function &apos;SMM&lt;1u, 800u, 32u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (./../hw_library/fixed_point_stream_convolution.h:78:15) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;L2&apos; (./../hw_library/fixed_point_stream_convolution.h:122:7) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;L1&apos; (./../hw_library/fixed_point_stream_convolution.h:120:6) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (./../hw_library/fixed_point_stream_convolution.h:96:22) in function &apos;SMM&lt;1u, 75u, 32u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (./../hw_library/fully_connected.h:78:15) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;L2&apos; (./../hw_library/fully_connected.h:122:7) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;L1&apos; (./../hw_library/fully_connected.h:120:6) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (./../hw_library/fully_connected.h:96:22) in function &apos;FC&lt;1u, 64u, 10u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;Loop-1&apos; (./../hw_library/fully_connected.h:78:15) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;L2&apos; (./../hw_library/fully_connected.h:122:7) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;L1&apos; (./../hw_library/fully_connected.h:120:6) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos; : 
+
+more than one sub loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-542]" key="XFORM_LOOPFLAT_INVALID_219" tag="LOOP,SDX_LOOP" content="Cannot flatten a loop nest &apos;Loop-2&apos; (./../hw_library/fully_connected.h:96:22) in function &apos;FC&lt;1u, 1024u, 64u&gt;&apos; : 
+
+the outer loop is not a perfect loop."/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;SCIG&lt;5u, 3u, 32u, 32u, 32u, 2u&gt;&apos; to &apos;SCIG&apos; (./../hw_library/stream_convolution_slideWindow.h:68:7)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;SCIG&lt;5u, 32u, 8u, 64u, 8u, 2u&gt;&apos; to &apos;SCIG.1&apos; (./../hw_library/stream_convolution_slideWindow.h:68:7)"/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;SCIG&lt;5u, 32u, 16u, 32u, 16u, 2u&gt;&apos; to &apos;SCIG.2&apos; (./../hw_library/stream_convolution_slideWindow.h:68:7)"/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;inputBuf.V&apos; (./../hw_library/stream_convolution_slideWindow.h:107)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;inputBuf.V&apos; (./../hw_library/stream_convolution_slideWindow.h:107)."/>
+	<Message severity="WARNING" prefix="[ANALYSIS 214-52]" key="ANALYSIS_USER_SET_DEP_242" tag="" content="Found false inter dependency for variable &apos;inputBuf.V&apos; (./../hw_library/stream_convolution_slideWindow.h:107)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:26 . Memory (MB): peak = 346.871 ; gain = 262.180"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;cifar_10&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;SMM&lt;1u, 75u, 32u&gt;&apos; to &apos;SMM_1u_75u_32u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;pool&lt;2u, 32u, 32u&gt;&apos; to &apos;pool_2u_32u_32u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;SCIG.2&apos; to &apos;SCIG_2&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;SMM&lt;1u, 800u, 32u&gt;&apos; to &apos;SMM_1u_800u_32u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;pool&lt;2u, 32u, 16u&gt;&apos; to &apos;pool_2u_32u_16u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;SCIG.1&apos; to &apos;SCIG_1&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;SMM&lt;1u, 800u, 64u&gt;&apos; to &apos;SMM_1u_800u_64u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;pool&lt;2u, 64u, 8u&gt;&apos; to &apos;pool_2u_64u_8u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;FC&lt;1u, 1024u, 64u&gt;&apos; to &apos;FC_1u_1024u_64u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;FC&lt;1u, 64u, 10u&gt;&apos; to &apos;FC_1u_64u_10u_s&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_434" tag="" content="Cannot apply functional unit assignment of &apos;Mul_LUT&apos; (./../hw_library/stream_convolution_slideWindow.h:105) on &apos;alloca&apos; operation (&apos;IFMPadDimSqrt&apos;, ./../hw_library/stream_convolution_slideWindow.h:104) due to incompatible operation sets."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_434" tag="" content="Cannot apply functional unit assignment of &apos;Mul_LUT&apos; (./../hw_library/stream_convolution_slideWindow.h:105) on &apos;alloca&apos; operation (&apos;IFMPadDimSqrt&apos;, ./../hw_library/stream_convolution_slideWindow.h:104) due to incompatible operation sets."/>
+	<Message severity="WARNING" prefix="[SYN 201-303]" key="PREPROC_CORE_ASSIGN_ILLEGAL_434" tag="" content="Cannot apply functional unit assignment of &apos;Mul_LUT&apos; (./../hw_library/stream_convolution_slideWindow.h:105) on &apos;alloca&apos; operation (&apos;IFMPadDimSqrt&apos;, ./../hw_library/stream_convolution_slideWindow.h:104) due to incompatible operation sets."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;AXI_DMA_SLAVE&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/axi_dma_slave.h:56) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;AXI_DMA_SLAVE&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/axi_dma_slave.h:56) [34]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 26.332 seconds; current allocated memory: 294.983 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.206 seconds; current allocated memory: 295.232 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SCIG&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;load&apos; operation (&apos;inElem_V_load&apos;, ./../hw_library/stream_convolution_slideWindow.h:141) on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127 and &apos;store&apos; operation (./../hw_library/stream_convolution_slideWindow.h:137) of variable &apos;tmp_239&apos;, ./../hw_library/stream_convolution_slideWindow.h:137 on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG&apos;: Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 3, Depth = 9."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SCIG&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) [28]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.578 seconds; current allocated memory: 295.835 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;inElem_V&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.23 seconds; current allocated memory: 296.478 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SMM_1u_75u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L2_L3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 8."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 12."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SMM_1u_75u_32u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) [86]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.107 seconds; current allocated memory: 306.717 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 4 loops out of a total 6 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.776 seconds; current allocated memory: 310.354 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;pool_2u_32u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;pool_2u_32u_32u_s&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (./../hw_library/pool.h:148) of variable &apos;acc_load_2_valIn_V&apos;, ./../hw_library/pool.h:148 on array &apos;acc&apos;, ./../hw_library/pool.h:121 and &apos;load&apos; operation (&apos;acc_load_2&apos;, ./../hw_library/pool.h:148) on array &apos;acc&apos;, ./../hw_library/pool.h:121."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 2, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;pool_2u_32u_32u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) [178]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.211 seconds; current allocated memory: 311.231 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;buf&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;acc&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.39 seconds; current allocated memory: 312.175 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SCIG_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;load&apos; operation (&apos;inElem_V_load&apos;, ./../hw_library/stream_convolution_slideWindow.h:141) on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127 and &apos;store&apos; operation (./../hw_library/stream_convolution_slideWindow.h:137) of variable &apos;tmp_152&apos;, ./../hw_library/stream_convolution_slideWindow.h:137 on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_2&apos;: Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 32, Depth = 37."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SCIG_2&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) [28]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.074 seconds; current allocated memory: 314.346 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;inElem_V&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.708 seconds; current allocated memory: 316.140 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SMM_1u_800u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L2_L3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 7."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SMM_1u_800u_32u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) [86]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.572 seconds; current allocated memory: 318.673 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.745 seconds; current allocated memory: 333.433 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;pool_2u_32u_16u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;pool_2u_32u_16u_s&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (./../hw_library/pool.h:149) of variable &apos;tmp_40&apos;, ./../hw_library/pool.h:149 on array &apos;acc&apos;, ./../hw_library/pool.h:121 and &apos;load&apos; operation (&apos;i_op&apos;, ./../hw_library/pool.h:149) on array &apos;acc&apos;, ./../hw_library/pool.h:121."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 2, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;pool_2u_32u_16u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) [146]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.122 seconds; current allocated memory: 334.182 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;buf&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;acc&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.356 seconds; current allocated memory: 334.996 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SCIG_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;load&apos; operation (&apos;inElem_V_load&apos;, ./../hw_library/stream_convolution_slideWindow.h:141) on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127 and &apos;store&apos; operation (./../hw_library/stream_convolution_slideWindow.h:137) of variable &apos;tmp_196&apos;, ./../hw_library/stream_convolution_slideWindow.h:137 on array &apos;inElem.V&apos;, ./../hw_library/stream_convolution_slideWindow.h:127."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 27, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;SCIG_1&apos;: Unable to enforce a carried dependence constraint (II = 31, distance = 1, offset = 1)
+   between fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136) and fifo read on port &apos;in_V_V&apos; (./../hw_library/stream_convolution_slideWindow.h:136)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 32, Depth = 37."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SCIG_1&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/stream_convolution_slideWindow.h:183) [28]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.138 seconds; current allocated memory: 337.183 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;inElem_V&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.877 seconds; current allocated memory: 338.940 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;SMM_1u_800u_64u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L2_L3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 7."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;SMM_1u_800u_64u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fixed_point_stream_convolution.h:143) [86]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.97 seconds; current allocated memory: 341.458 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.182 seconds; current allocated memory: 356.219 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;pool_2u_64u_8u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.1&apos;."/>
+	<Message severity="WARNING" prefix="[SCHED 204-68]" key="SCHED_CARRIED_CONSTRAINT_NOT_MET_32" tag="LOOP,SDX_LOOP,SCHEDULE" content="The II Violation in module &apos;pool_2u_64u_8u_s&apos;: Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between &apos;store&apos; operation (./../hw_library/pool.h:149) of variable &apos;tmp_16&apos;, ./../hw_library/pool.h:149 on array &apos;acc&apos;, ./../hw_library/pool.h:121 and &apos;load&apos; operation (&apos;i_op&apos;, ./../hw_library/pool.h:149) on array &apos;acc&apos;, ./../hw_library/pool.h:121."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 2, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.1.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2.2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;pool_2u_64u_8u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/pool.h:188) [194]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.374 seconds; current allocated memory: 357.102 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;buf&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="WARNING" prefix="[BIND 205-102]" key="BIND_102_679" tag="" content="The specified resource core for memory &apos;acc&apos; will be ignored if a simpler one can be used."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.518 seconds; current allocated memory: 358.096 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;FC_1u_1024u_64u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fully_connected.h:143) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L2_L3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 7."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;FC_1u_1024u_64u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fully_connected.h:143) [100]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.831 seconds; current allocated memory: 361.380 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.114 seconds; current allocated memory: 383.304 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;FC_1u_64u_10u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fully_connected.h:143) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L1.1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;L2_L3&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 7."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 2."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;FC_1u_64u_10u_s&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/fully_connected.h:143) [68]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.567 seconds; current allocated memory: 384.949 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.593 seconds; current allocated memory: 389.530 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;AXI_DMA_MASTER&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_20" tag="SDX_KERNEL,SCHEDULE" content="Estimated delay (12.6ns) of &apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/axi_dma_master.h:67) exceeds the target cycle time (target cycle time: 10ns, clock uncertainty: 1.25ns, effective cycle time: 8.75ns)."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 2&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;Loop 1&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 1, Final II = 1, Depth = 3."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_76" tag="SDX_KERNEL,SCHEDULE" content="Estimated clock period (12.592ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)."/>
+	<Message severity="WARNING" prefix="[SCHED 204-21]" key="SCHED_DELAY_EXCEEDED_74" tag="SDX_KERNEL,SCHEDULE" content="The critical path in module &apos;AXI_DMA_MASTER&apos; consists of the following:
+	&apos;mul&apos; operation (&apos;KER_size_0&apos;, ./../hw_library/axi_dma_master.h:67) [26]  (12.6 ns)"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.952 seconds; current allocated memory: 389.768 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.176 seconds; current allocated memory: 390.052 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;cifar_10&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.427 seconds; current allocated memory: 390.273 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.589 seconds; current allocated memory: 392.745 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;AXI_DMA_SLAVE&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mul_32s_32s_32_1_1&apos; to &apos;cifar_10_mul_32s_bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 6 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;AXI_DMA_SLAVE&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.404 seconds; current allocated memory: 393.940 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SCIG&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mul_32s_16ns_32_1_1&apos; to &apos;cifar_10_mul_32s_cud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SCIG&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.369 seconds; current allocated memory: 395.317 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SMM_1u_75u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_COL_2&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_ROW_2&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;OFMDim_current_2&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;A_ROW_2&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_0&apos; to &apos;SMM_1u_75u_32u_s_dEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_0&apos; to &apos;SMM_1u_75u_32u_s_eOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_1&apos; to &apos;SMM_1u_75u_32u_s_fYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_1&apos; to &apos;SMM_1u_75u_32u_s_g8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_2&apos; to &apos;SMM_1u_75u_32u_s_hbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_2&apos; to &apos;SMM_1u_75u_32u_s_ibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_3&apos; to &apos;SMM_1u_75u_32u_s_jbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_3&apos; to &apos;SMM_1u_75u_32u_s_kbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_4&apos; to &apos;SMM_1u_75u_32u_s_lbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_4&apos; to &apos;SMM_1u_75u_32u_s_mb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_5&apos; to &apos;SMM_1u_75u_32u_s_ncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_5&apos; to &apos;SMM_1u_75u_32u_s_ocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_6&apos; to &apos;SMM_1u_75u_32u_s_pcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_6&apos; to &apos;SMM_1u_75u_32u_s_qcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_7&apos; to &apos;SMM_1u_75u_32u_s_rcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_7&apos; to &apos;SMM_1u_75u_32u_s_sc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_8&apos; to &apos;SMM_1u_75u_32u_s_tde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_8&apos; to &apos;SMM_1u_75u_32u_s_udo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_9&apos; to &apos;SMM_1u_75u_32u_s_vdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_9&apos; to &apos;SMM_1u_75u_32u_s_wdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_10&apos; to &apos;SMM_1u_75u_32u_s_xdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_10&apos; to &apos;SMM_1u_75u_32u_s_yd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_11&apos; to &apos;SMM_1u_75u_32u_s_zec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_11&apos; to &apos;SMM_1u_75u_32u_s_Aem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_12&apos; to &apos;SMM_1u_75u_32u_s_Bew&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_12&apos; to &apos;SMM_1u_75u_32u_s_CeG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_13&apos; to &apos;SMM_1u_75u_32u_s_DeQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_13&apos; to &apos;SMM_1u_75u_32u_s_Ee0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_14&apos; to &apos;SMM_1u_75u_32u_s_Ffa&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_14&apos; to &apos;SMM_1u_75u_32u_s_Gfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_15&apos; to &apos;SMM_1u_75u_32u_s_Hfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_15&apos; to &apos;SMM_1u_75u_32u_s_IfE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_16&apos; to &apos;SMM_1u_75u_32u_s_JfO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_16&apos; to &apos;SMM_1u_75u_32u_s_KfY&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_17&apos; to &apos;SMM_1u_75u_32u_s_Lf8&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_17&apos; to &apos;SMM_1u_75u_32u_s_Mgi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_18&apos; to &apos;SMM_1u_75u_32u_s_Ngs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_18&apos; to &apos;SMM_1u_75u_32u_s_OgC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_19&apos; to &apos;SMM_1u_75u_32u_s_PgM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_19&apos; to &apos;SMM_1u_75u_32u_s_QgW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_20&apos; to &apos;SMM_1u_75u_32u_s_Rg6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_20&apos; to &apos;SMM_1u_75u_32u_s_Shg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_21&apos; to &apos;SMM_1u_75u_32u_s_Thq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_21&apos; to &apos;SMM_1u_75u_32u_s_UhA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_22&apos; to &apos;SMM_1u_75u_32u_s_VhK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_22&apos; to &apos;SMM_1u_75u_32u_s_WhU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_23&apos; to &apos;SMM_1u_75u_32u_s_Xh4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_23&apos; to &apos;SMM_1u_75u_32u_s_Yie&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_A_V_2_24&apos; to &apos;SMM_1u_75u_32u_s_Zio&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_75u_32u_s_B_V_2_24&apos; to &apos;SMM_1u_75u_32u_s_0iy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_urem_7ns_3ns_7_11_1&apos; to &apos;cifar_10_urem_7ns1iI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mul_mul_16s_16s_32_1_1&apos; to &apos;cifar_10_mul_mul_2iS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mac_muladd_16s_16s_32s_32_1_1&apos; to &apos;cifar_10_mac_mula3i2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mac_mula3i2&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_mul_2iS&apos;: 9 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_urem_7ns1iI&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SMM_1u_75u_32u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.205 seconds; current allocated memory: 400.124 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;pool_2u_32u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMCH_curr_1&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMDim_curr_1&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_32u_32u_s_buf&apos; to &apos;pool_2u_32u_32u_s4jc&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_32u_32u_s_acc&apos; to &apos;pool_2u_32u_32u_s5jm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;pool_2u_32u_32u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.379 seconds; current allocated memory: 402.856 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SCIG_2&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mul_32s_14ns_32_1_1&apos; to &apos;cifar_10_mul_32s_6jw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_6jw&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SCIG_2&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.297 seconds; current allocated memory: 407.983 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SMM_1u_800u_32u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_COL_1&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_ROW_1&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;OFMDim_current_1&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;A_ROW_1&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_0&apos; to &apos;SMM_1u_800u_32u_s7jG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_0&apos; to &apos;SMM_1u_800u_32u_s8jQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_1&apos; to &apos;SMM_1u_800u_32u_s9j0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_1&apos; to &apos;SMM_1u_800u_32u_sbak&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_2&apos; to &apos;SMM_1u_800u_32u_sbbk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_2&apos; to &apos;SMM_1u_800u_32u_sbck&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_3&apos; to &apos;SMM_1u_800u_32u_sbdk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_3&apos; to &apos;SMM_1u_800u_32u_sbek&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_4&apos; to &apos;SMM_1u_800u_32u_sbfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_4&apos; to &apos;SMM_1u_800u_32u_sbgk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_5&apos; to &apos;SMM_1u_800u_32u_sbhl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_5&apos; to &apos;SMM_1u_800u_32u_sbil&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_6&apos; to &apos;SMM_1u_800u_32u_sbjl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_6&apos; to &apos;SMM_1u_800u_32u_sbkl&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_7&apos; to &apos;SMM_1u_800u_32u_sbll&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_7&apos; to &apos;SMM_1u_800u_32u_sbml&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_8&apos; to &apos;SMM_1u_800u_32u_sbnm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_8&apos; to &apos;SMM_1u_800u_32u_sbom&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_9&apos; to &apos;SMM_1u_800u_32u_sbpm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_9&apos; to &apos;SMM_1u_800u_32u_sbqm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_10&apos; to &apos;SMM_1u_800u_32u_sbrm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_10&apos; to &apos;SMM_1u_800u_32u_sbsm&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_11&apos; to &apos;SMM_1u_800u_32u_sbtn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_11&apos; to &apos;SMM_1u_800u_32u_sbun&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_12&apos; to &apos;SMM_1u_800u_32u_sbvn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_12&apos; to &apos;SMM_1u_800u_32u_sbwn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_13&apos; to &apos;SMM_1u_800u_32u_sbxn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_13&apos; to &apos;SMM_1u_800u_32u_sbyn&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_14&apos; to &apos;SMM_1u_800u_32u_sbzo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_14&apos; to &apos;SMM_1u_800u_32u_sbAo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_15&apos; to &apos;SMM_1u_800u_32u_sbBo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_15&apos; to &apos;SMM_1u_800u_32u_sbCo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_16&apos; to &apos;SMM_1u_800u_32u_sbDo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_16&apos; to &apos;SMM_1u_800u_32u_sbEo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_17&apos; to &apos;SMM_1u_800u_32u_sbFp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_17&apos; to &apos;SMM_1u_800u_32u_sbGp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_18&apos; to &apos;SMM_1u_800u_32u_sbHp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_18&apos; to &apos;SMM_1u_800u_32u_sbIp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_19&apos; to &apos;SMM_1u_800u_32u_sbJp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_19&apos; to &apos;SMM_1u_800u_32u_sbKp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_20&apos; to &apos;SMM_1u_800u_32u_sbLp&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_20&apos; to &apos;SMM_1u_800u_32u_sbMq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_21&apos; to &apos;SMM_1u_800u_32u_sbNq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_21&apos; to &apos;SMM_1u_800u_32u_sbOq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_22&apos; to &apos;SMM_1u_800u_32u_sbPq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_22&apos; to &apos;SMM_1u_800u_32u_sbQq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_23&apos; to &apos;SMM_1u_800u_32u_sbRq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_23&apos; to &apos;SMM_1u_800u_32u_sbSr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_A_V_3_24&apos; to &apos;SMM_1u_800u_32u_sbTr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_32u_s_B_V_3_24&apos; to &apos;SMM_1u_800u_32u_sbUr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mac_mula3i2&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_mul_2iS&apos;: 9 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SMM_1u_800u_32u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.642 seconds; current allocated memory: 412.640 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;pool_2u_32u_16u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMCH_curr_2&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMDim_curr_2&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_32u_16u_s_buf&apos; to &apos;pool_2u_32u_16u_sbVr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_32u_16u_s_acc&apos; to &apos;pool_2u_32u_16u_sbWr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;pool_2u_32u_16u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.405 seconds; current allocated memory: 414.953 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SCIG_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;cifar_10_mul_32s_12ns_32_1_1&apos; to &apos;cifar_10_mul_32s_bXr&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bXr&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SCIG_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.245 seconds; current allocated memory: 420.040 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;SMM_1u_800u_64u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_COL&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_ROW&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;OFMDim_current&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;A_ROW&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_0&apos; to &apos;SMM_1u_800u_64u_sbYs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_0&apos; to &apos;SMM_1u_800u_64u_sbZs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_1&apos; to &apos;SMM_1u_800u_64u_sb0s&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_1&apos; to &apos;SMM_1u_800u_64u_sb1s&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_2&apos; to &apos;SMM_1u_800u_64u_sb2s&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_2&apos; to &apos;SMM_1u_800u_64u_sb3s&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_3&apos; to &apos;SMM_1u_800u_64u_sb4t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_3&apos; to &apos;SMM_1u_800u_64u_sb5t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_4&apos; to &apos;SMM_1u_800u_64u_sb6t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_4&apos; to &apos;SMM_1u_800u_64u_sb7t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_5&apos; to &apos;SMM_1u_800u_64u_sb8t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_5&apos; to &apos;SMM_1u_800u_64u_sb9t&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_6&apos; to &apos;SMM_1u_800u_64u_scau&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_6&apos; to &apos;SMM_1u_800u_64u_scbu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_7&apos; to &apos;SMM_1u_800u_64u_sccu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_7&apos; to &apos;SMM_1u_800u_64u_scdu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_8&apos; to &apos;SMM_1u_800u_64u_sceu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_8&apos; to &apos;SMM_1u_800u_64u_scfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_9&apos; to &apos;SMM_1u_800u_64u_scgu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_9&apos; to &apos;SMM_1u_800u_64u_schv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_10&apos; to &apos;SMM_1u_800u_64u_sciv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_10&apos; to &apos;SMM_1u_800u_64u_scjv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_11&apos; to &apos;SMM_1u_800u_64u_sckv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_11&apos; to &apos;SMM_1u_800u_64u_sclv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_12&apos; to &apos;SMM_1u_800u_64u_scmv&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_12&apos; to &apos;SMM_1u_800u_64u_scnw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_13&apos; to &apos;SMM_1u_800u_64u_scow&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_13&apos; to &apos;SMM_1u_800u_64u_scpw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_14&apos; to &apos;SMM_1u_800u_64u_scqw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_14&apos; to &apos;SMM_1u_800u_64u_scrw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_15&apos; to &apos;SMM_1u_800u_64u_scsw&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_15&apos; to &apos;SMM_1u_800u_64u_sctx&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_16&apos; to &apos;SMM_1u_800u_64u_scux&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_16&apos; to &apos;SMM_1u_800u_64u_scvx&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_17&apos; to &apos;SMM_1u_800u_64u_scwx&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_17&apos; to &apos;SMM_1u_800u_64u_scxx&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_18&apos; to &apos;SMM_1u_800u_64u_scyx&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_18&apos; to &apos;SMM_1u_800u_64u_sczy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_19&apos; to &apos;SMM_1u_800u_64u_scAy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_19&apos; to &apos;SMM_1u_800u_64u_scBy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_20&apos; to &apos;SMM_1u_800u_64u_scCy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_20&apos; to &apos;SMM_1u_800u_64u_scDy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_21&apos; to &apos;SMM_1u_800u_64u_scEy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_21&apos; to &apos;SMM_1u_800u_64u_scFz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_22&apos; to &apos;SMM_1u_800u_64u_scGz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_22&apos; to &apos;SMM_1u_800u_64u_scHz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_23&apos; to &apos;SMM_1u_800u_64u_scIz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_23&apos; to &apos;SMM_1u_800u_64u_scJz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_A_V_4_24&apos; to &apos;SMM_1u_800u_64u_scKz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;SMM_1u_800u_64u_s_B_V_4_24&apos; to &apos;SMM_1u_800u_64u_scLz&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mac_mula3i2&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_mul_2iS&apos;: 9 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;SMM_1u_800u_64u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.758 seconds; current allocated memory: 424.716 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;pool_2u_64u_8u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMCH_curr&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;IFMDim_curr&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_64u_8u_s_buf&apos; to &apos;pool_2u_64u_8u_s_cMA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;pool_2u_64u_8u_s_acc&apos; to &apos;pool_2u_64u_8u_s_cNA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;pool_2u_64u_8u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.478 seconds; current allocated memory: 427.442 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;FC_1u_1024u_64u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_COL_4&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_ROW_4&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;OFMDim_current_4&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;A_ROW_4&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_0&apos; to &apos;FC_1u_1024u_64u_scOA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_0&apos; to &apos;FC_1u_1024u_64u_scPA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_1123&apos; to &apos;FC_1u_1024u_64u_scQA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_1127&apos; to &apos;FC_1u_1024u_64u_scRA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_2124&apos; to &apos;FC_1u_1024u_64u_scSB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_2128&apos; to &apos;FC_1u_1024u_64u_scTB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_3125&apos; to &apos;FC_1u_1024u_64u_scUB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_3129&apos; to &apos;FC_1u_1024u_64u_scVB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_4126&apos; to &apos;FC_1u_1024u_64u_scWB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_4130&apos; to &apos;FC_1u_1024u_64u_scXB&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_5&apos; to &apos;FC_1u_1024u_64u_scYC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_5&apos; to &apos;FC_1u_1024u_64u_scZC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_6&apos; to &apos;FC_1u_1024u_64u_sc0C&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_6&apos; to &apos;FC_1u_1024u_64u_sc1C&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_7&apos; to &apos;FC_1u_1024u_64u_sc2C&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_7&apos; to &apos;FC_1u_1024u_64u_sc3C&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_8&apos; to &apos;FC_1u_1024u_64u_sc4D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_8&apos; to &apos;FC_1u_1024u_64u_sc5D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_9&apos; to &apos;FC_1u_1024u_64u_sc6D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_9&apos; to &apos;FC_1u_1024u_64u_sc7D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_10&apos; to &apos;FC_1u_1024u_64u_sc8D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_10&apos; to &apos;FC_1u_1024u_64u_sc9D&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_11&apos; to &apos;FC_1u_1024u_64u_sdaE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_11&apos; to &apos;FC_1u_1024u_64u_sdbE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_12&apos; to &apos;FC_1u_1024u_64u_sdcE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_12&apos; to &apos;FC_1u_1024u_64u_sddE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_13&apos; to &apos;FC_1u_1024u_64u_sdeE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_13&apos; to &apos;FC_1u_1024u_64u_sdfE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_14&apos; to &apos;FC_1u_1024u_64u_sdgE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_14&apos; to &apos;FC_1u_1024u_64u_sdhF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_15&apos; to &apos;FC_1u_1024u_64u_sdiF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_15&apos; to &apos;FC_1u_1024u_64u_sdjF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_16&apos; to &apos;FC_1u_1024u_64u_sdkF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_16&apos; to &apos;FC_1u_1024u_64u_sdlF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_17&apos; to &apos;FC_1u_1024u_64u_sdmF&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_17&apos; to &apos;FC_1u_1024u_64u_sdnG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_18&apos; to &apos;FC_1u_1024u_64u_sdoG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_18&apos; to &apos;FC_1u_1024u_64u_sdpG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_19&apos; to &apos;FC_1u_1024u_64u_sdqG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_19&apos; to &apos;FC_1u_1024u_64u_sdrG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_20&apos; to &apos;FC_1u_1024u_64u_sdsG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_20&apos; to &apos;FC_1u_1024u_64u_sdtH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_21&apos; to &apos;FC_1u_1024u_64u_sduH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_21&apos; to &apos;FC_1u_1024u_64u_sdvH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_22&apos; to &apos;FC_1u_1024u_64u_sdwH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_22&apos; to &apos;FC_1u_1024u_64u_sdxH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_23&apos; to &apos;FC_1u_1024u_64u_sdyH&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_23&apos; to &apos;FC_1u_1024u_64u_sdzI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_24&apos; to &apos;FC_1u_1024u_64u_sdAI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_24&apos; to &apos;FC_1u_1024u_64u_sdBI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_25&apos; to &apos;FC_1u_1024u_64u_sdCI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_25&apos; to &apos;FC_1u_1024u_64u_sdDI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_26&apos; to &apos;FC_1u_1024u_64u_sdEI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_26&apos; to &apos;FC_1u_1024u_64u_sdFJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_27&apos; to &apos;FC_1u_1024u_64u_sdGJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_27&apos; to &apos;FC_1u_1024u_64u_sdHJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_28&apos; to &apos;FC_1u_1024u_64u_sdIJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_28&apos; to &apos;FC_1u_1024u_64u_sdJJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_29&apos; to &apos;FC_1u_1024u_64u_sdKJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_29&apos; to &apos;FC_1u_1024u_64u_sdLJ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_30&apos; to &apos;FC_1u_1024u_64u_sdMK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_30&apos; to &apos;FC_1u_1024u_64u_sdNK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_A_V_31&apos; to &apos;FC_1u_1024u_64u_sdOK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_1024u_64u_s_B_V_31&apos; to &apos;FC_1u_1024u_64u_sdPK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mac_mula3i2&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_mul_2iS&apos;: 16 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;FC_1u_1024u_64u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.896 seconds; current allocated memory: 432.988 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;FC_1u_64u_10u_s&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_COL_3&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;B_ROW_3&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;OFMDim_current_3&apos; is power-on initialization."/>
+	<Message severity="WARNING" prefix="[RTGEN 206-101]" key="RTGEN_101_861" tag="" content="Register &apos;A_ROW_3&apos; is power-on initialization."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_0&apos; to &apos;FC_1u_64u_10u_s_AdQK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_0&apos; to &apos;FC_1u_64u_10u_s_BdRK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_1&apos; to &apos;FC_1u_64u_10u_s_AdSL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_1&apos; to &apos;FC_1u_64u_10u_s_BdTL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_2&apos; to &apos;FC_1u_64u_10u_s_AdUL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_2&apos; to &apos;FC_1u_64u_10u_s_BdVL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_3&apos; to &apos;FC_1u_64u_10u_s_AdWL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_3&apos; to &apos;FC_1u_64u_10u_s_BdXL&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_4&apos; to &apos;FC_1u_64u_10u_s_AdYM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_4&apos; to &apos;FC_1u_64u_10u_s_BdZM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_5&apos; to &apos;FC_1u_64u_10u_s_Ad0M&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_5&apos; to &apos;FC_1u_64u_10u_s_Bd1M&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_6&apos; to &apos;FC_1u_64u_10u_s_Ad2M&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_6&apos; to &apos;FC_1u_64u_10u_s_Bd3M&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_7&apos; to &apos;FC_1u_64u_10u_s_Ad4N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_7&apos; to &apos;FC_1u_64u_10u_s_Bd5N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_8&apos; to &apos;FC_1u_64u_10u_s_Ad6N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_8&apos; to &apos;FC_1u_64u_10u_s_Bd7N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_9&apos; to &apos;FC_1u_64u_10u_s_Ad8N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_9&apos; to &apos;FC_1u_64u_10u_s_Bd9N&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_10&apos; to &apos;FC_1u_64u_10u_s_AeaO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_10&apos; to &apos;FC_1u_64u_10u_s_BebO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_11&apos; to &apos;FC_1u_64u_10u_s_AecO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_11&apos; to &apos;FC_1u_64u_10u_s_BedO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_12&apos; to &apos;FC_1u_64u_10u_s_AeeO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_12&apos; to &apos;FC_1u_64u_10u_s_BefO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_13&apos; to &apos;FC_1u_64u_10u_s_AegO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_13&apos; to &apos;FC_1u_64u_10u_s_BehP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_14&apos; to &apos;FC_1u_64u_10u_s_AeiP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_14&apos; to &apos;FC_1u_64u_10u_s_BejP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_A_V_1_15&apos; to &apos;FC_1u_64u_10u_s_AekP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;FC_1u_64u_10u_s_B_V_1_15&apos; to &apos;FC_1u_64u_10u_s_BelP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mac_mula3i2&apos;: 8 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 3 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_mul_2iS&apos;: 8 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;FC_1u_64u_10u_s&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 3.4 seconds; current allocated memory: 437.163 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;AXI_DMA_MASTER&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;cifar_10_mul_32s_bkb&apos;: 6 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;AXI_DMA_MASTER&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.81 seconds; current allocated memory: 438.452 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;cifar_10&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;cifar_10/in_stream_V_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;cifar_10/in_stream_V_last&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;cifar_10/out_stream_V_data_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;cifar_10/out_stream_V_last&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;cifar_10&apos; to &apos;ap_ctrl_none&apos;."/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_SMM_1u_75u_32u_U0&apos; to &apos;start_for_SMM_1u_emP&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_pool_2u_32u_32u_U0&apos; to &apos;start_for_pool_2uenQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_SMM_1u_800u_32u_U0&apos; to &apos;start_for_SMM_1u_eoQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_pool_2u_32u_16u_U0&apos; to &apos;start_for_pool_2uepQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_SMM_1u_800u_64u_U0&apos; to &apos;start_for_SMM_1u_eqQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_pool_2u_64u_8u_U0&apos; to &apos;start_for_pool_2uerQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_FC_1u_1024u_64u_U0&apos; to &apos;start_for_FC_1u_1esQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_FC_1u_64u_10u_U0&apos; to &apos;start_for_FC_1u_6etR&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;start_for_AXI_DMA_MASTER_U0&apos; to &apos;start_for_AXI_DMAeuR&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;cifar_10&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.617 seconds; current allocated memory: 439.708 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;cifar_10_mul_32s_bkb_Mul_LUT_0&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;cifar_10_mul_32s_cud_Mul_LUT_1&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;SCIG_inputBuf_V_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;SCIG_inElem_V_ram (RAM_S2P_LUTRAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;cifar_10_urem_7ns1iI_div&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;SMM_1u_75u_32u_s_dEe_ram (RAM_S2P_LUTRAM)&apos; using distributed RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;SMM_1u_75u_32u_s_eOg_ram (RAM_S2P_BRAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;pool_2u_32u_32u_s4jc_ram (RAM_2P_LUTRAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;pool_2u_32u_32u_s5jm_ram (RAM_2P_LUTRAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;cifar_10_mul_32s_6jw_Mul_LUT_2&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;SCIG_2_inputBuf_V_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;SMM_1u_800u_32u_s7jG_ram (RAM_S2P_LUTRAM)&apos; using distributed RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;SMM_1u_800u_32u_s8jQ_ram (RAM_S2P_BRAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;pool_2u_32u_16u_sbVr_ram (RAM_2P_LUTRAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-282]" key="RTMG_282_1796" tag="" content="Generating pipelined core: &apos;cifar_10_mul_32s_bXr_Mul_LUT_3&apos;"/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;SMM_1u_800u_64u_sbZs_ram (RAM_S2P_BRAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;pool_2u_64u_8u_s_cNA_ram (RAM_2P_LUTRAM)&apos; using distributed RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;FC_1u_64u_10u_s_AdQK_ram (RAM_S2P_LUTRAM)&apos; using distributed RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1792" tag="" content="Implementing memory &apos;FC_1u_64u_10u_s_BdRK_ram (RAM_S2P_BRAM)&apos; using block RAMs with power-on initialization."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_0_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_1_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_2_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_3_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_4_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_5_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_6_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_7_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_8_V_V_U(fifo_w32_d2_A)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_9_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_10_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;connect_11_V_V_U(fifo_w32_d50_A)&apos; using Block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SCIG_U0_U(start_for_SCIG_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SMM_1u_emP_U(start_for_SMM_1u_emP)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_pool_2uenQ_U(start_for_pool_2uenQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SCIG_2_U0_U(start_for_SCIG_2_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SMM_1u_eoQ_U(start_for_SMM_1u_eoQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_pool_2uepQ_U(start_for_pool_2uepQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SCIG_1_U0_U(start_for_SCIG_1_U0)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_SMM_1u_eqQ_U(start_for_SMM_1u_eqQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_pool_2uerQ_U(start_for_pool_2uerQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_FC_1u_1esQ_U(start_for_FC_1u_1esQ)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_FC_1u_6etR_U(start_for_FC_1u_6etR)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[RTMG 210-285]" key="RTMG_285_1799" tag="" content="Implementing FIFO &apos;start_for_AXI_DMAeuR_U(start_for_AXI_DMAeuR)&apos; using Shift Registers."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:01:05 ; elapsed = 00:01:30 . Memory (MB): peak = 614.082 ; gain = 529.391"/>
+	<Message severity="INFO" prefix="[SYSC 207-301]" key="SYSC_301_1065" tag="" content="Generating SystemC RTL for cifar_10."/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for cifar_10."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for cifar_10."/>
+</Messages>
